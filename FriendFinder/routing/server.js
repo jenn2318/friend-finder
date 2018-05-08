@@ -14,7 +14,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extented: true}));
 
 
-//ROUTING files, tells the server what should be done when the requests are made
+//Require these files which will tell the server what should be done when the requests are made
 require("./routing/htmlRoutes.js")(app);
 require("./routing/apiRoutes.js")(app);
 
