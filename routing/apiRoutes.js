@@ -1,5 +1,5 @@
-var bestFriendData = require("../data/friends.js");
-var path = require("path");
+let bestFriendArray = require("../app/data/friends.js");
+let path = require("path");
 newArray = [];
 
 //Export API Routes
@@ -21,15 +21,43 @@ module.exports = function(app) {
         newArray.push(Number(req.body.question9));
         newArray.push(Number(req.body.question10));
         console.log(newArray);
+        //Find the minimum difference between the user and the friends
+         let lowestFriend = {};
+         let total = 0;
+         for (let i = 0; i < newArray.length; i++) {
+            total = total + newArray[i];
+        }
+        //oop through bestFriendArray
+        for (let j = 0; j < bestFriendArray.length; j++) {
+            let friendTotal = 0;
+            for (let i = 0; i < bestFriendArray[j].scores.length; i++) {
+                friendTotal = friendTotal + bestFriendArray[j].scores[i];
+            }
+            //Compare total w/friend total
+            let diff = Math.abs(total - friendTotal);
+            if (lowestFriend && lowestFriend.diff) {
+                if (friendTotal < lowestFriend.diff) {
+                    lowestFriend = {};
+                    lowestFriend.diff = friendTotal;
+                    lowestFriend.name = bestFriendArray[j].name;
+                    lowestFriend.photo = bestFriendArray[j].photo;
+                }
+            } else {
+                lowestFriend.diff = friendTotal;
+                lowestFriend.name = bestFriendArray[j].name;
+                lowestFriend.photo = bestFriendArray[j].photo;
+            }
+        }
+        console.log(lowestFriend);
     });
 
     // var userResponse = req.body.scores;
     // console.log(`${userResponse}`);
 
     //Looks at best friend match
-    var bestFriendMatch = "";
-    var bestFriendImage = "";
-    var TotalDifference = 0;
+    //var bestFriendMatch = "";
+    //var bestFriendImage = "";
+    //var TotalDifference = 0;
 
     //For loop to loop over the friend data
     

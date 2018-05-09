@@ -20,8 +20,13 @@ $(".submit").on("click", function(event) {
 
     //Here we will calculate the difference between the user's score and all the rest of the friends
 
-    //Find the minimum difference between the user and the friends
-    var min_difference = Math.min.apply(Math, newArray);
+
+
+
+
+
+
+    //var min_difference = Math.min.apply(Math, newArray);
 
 
     // Here I'm trying to grab the form elements
