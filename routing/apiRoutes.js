@@ -27,7 +27,7 @@ module.exports = function(app) {
          for (let i = 0; i < newArray.length; i++) {
             total = total + newArray[i];
         }
-        //oop through bestFriendArray
+        //loop through bestFriendArray
         for (let j = 0; j < bestFriendArray.length; j++) {
             let friendTotal = 0;
             for (let i = 0; i < bestFriendArray[j].scores.length; i++) {
@@ -38,27 +38,19 @@ module.exports = function(app) {
             if (lowestFriend && lowestFriend.diff) {
                 if (friendTotal < lowestFriend.diff) {
                     lowestFriend = {};
-                    lowestFriend.diff = friendTotal;
+                    lowestFriend.diff = diff;
                     lowestFriend.name = bestFriendArray[j].name;
                     lowestFriend.photo = bestFriendArray[j].photo;
                 }
             } else {
-                lowestFriend.diff = friendTotal;
+                lowestFriend.diff = diff;
                 lowestFriend.name = bestFriendArray[j].name;
                 lowestFriend.photo = bestFriendArray[j].photo;
             }
         }
         console.log(lowestFriend);
+        //res.sendFile(path.join(__dirname, "../public/results.html"));
+        res.send(`Your closest match is ${lowestFriend.name} \n \n <img src="${lowestFriend.photo}"> Your difference is ${lowestFriend.diff}`);
     });
 
-    // var userResponse = req.body.scores;
-    // console.log(`${userResponse}`);
-
-    //Looks at best friend match
-    //var bestFriendMatch = "";
-    //var bestFriendImage = "";
-    //var TotalDifference = 0;
-
-    //For loop to loop over the friend data
-    
 };
