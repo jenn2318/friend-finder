@@ -12,7 +12,7 @@
 <body>
 
 <div class="container">
-<form action="/api/survey" method="POST">
+<form action="/api/survey" id="sruvey-form" method="POST">
     <h2>Survey Questions</h2>
     <hr>
 
@@ -168,6 +168,27 @@
         <i class="fa fa-check-circle" aria-hidden="true"></i>
         Submit</button>
 
+    <!--Modal-->
+    <div class="modal fade" id="modal-match" tabindex="-1" role="dialog" aria-labelledby="modal-label">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                    <h4 class="modal-title" id="modal-label">Here is your best friend match!</h4>
+                </div>
+                <div class="modal-body">
+                    <p id="modal-name"></p>
+                    <img id="modal-photo" src="" alt="profile image">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary btn-sm" data-dismiss="modal"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
     <hr>
     <footer class="footer">
         <div class="container">
@@ -181,5 +202,8 @@
 </div>
 
 
+<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+<script src="js/app.js"></script>
 
 </body>
+</html>
