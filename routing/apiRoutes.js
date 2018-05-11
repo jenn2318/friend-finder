@@ -54,3 +54,25 @@ module.exports = function(app) {
     });
 
 };
+
+
+//jQuery to grab and show the modal of the best friend match still working on this part
+
+//$(document).ready(function() {
+  //  $("submit").on("click", function (event) {
+    //    event.preventDefault();
+      //  let modalName = modal - match
+        //let modalPhoto = modal - photo
+        //let apiPath = "api/friends";
+        //$.post(currentURL + apiPath, youBestFriend, function (data) {
+          //  $surveyForm.reset();
+           // $nameModal.text(data.name);
+           // $photoModal.attr("src", data.photo);
+           // $modal.modal("show");
+
+       // });
+
+       // console.log(newFriend);
+
+   // });
+//}
