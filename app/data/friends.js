@@ -6,7 +6,7 @@ var bestFriendArray = [
 
     {
         name: "Tommy",
-        photo: "",
+        photo: "friendfinder-tommy.jpg",
         scores: [
             4,
             5,
@@ -22,7 +22,7 @@ var bestFriendArray = [
     },
     {
         name: "Jessica",
-        photo: "",
+        photo: "friendfinder-jessica.png",
         scores: [
             5,
             5,
@@ -38,7 +38,7 @@ var bestFriendArray = [
     },
     {
         name: "Nathan",
-        photo: "",
+        photo: "friendfinder-nathan.png",
         scores: [
             4,
             2,
@@ -54,7 +54,7 @@ var bestFriendArray = [
     },
     {
         name: "Ally",
-        photo: "",
+        photo: "friendfinder-ally.png",
         scores: [
             4,
             5,
@@ -71,7 +71,7 @@ var bestFriendArray = [
     },
     {
         name: "Bryan",
-        photo: "",
+        photo: "friendfinder-bryan.png",
         scores: [
             4,
             4,
@@ -87,7 +87,7 @@ var bestFriendArray = [
     },
     {
         name: "Dana",
-        photo: "",
+        photo: "friendfinder-dana.png",
         scores: [
             4,
             4,
@@ -103,7 +103,7 @@ var bestFriendArray = [
     },
     {
         name: "Kevin",
-        photo: "",
+        photo: "friendfinder-kevin.png",
         scores: [
             1,
             1,
@@ -119,7 +119,7 @@ var bestFriendArray = [
     },
     {
         name: "Camden",
-        photo: "",
+        photo: "friendfinder-camden.png",
         scores: [
             4,
             5,
