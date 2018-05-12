@@ -88,6 +88,6 @@ The modal should display both the name and picture of the closest match.
 Also, make sure to deploy your application to Heroku for other users to fill out!
 
 ![heroku deployment](public/assets/images/ffheroku_deploy.png)
-![heroku build](public/assets/images/heroku-build.png)
+![heroku deployed app](public/assets/images/ffapp_deployed.png)
 
 
