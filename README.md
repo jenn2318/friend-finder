@@ -62,6 +62,10 @@ You should save your application's data inside of app/data/friends.js as an arra
     ]
 }
 
+
+![friend data array](public/assets/images/bestFriendData.png)
+
+
 Determine the user's most compatible friend using the following as a guide:
 
 Convert each user's results into a simple array of numbers (ex: [5, 1, 4, 4, 5, 1, 2, 5, 4, 1]).
