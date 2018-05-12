@@ -63,7 +63,7 @@ You should save your application's data inside of app/data/friends.js as an arra
 }
 
 
-![friend data array](public/assets/images/bestFriendData.png)
+![friend data array](public/assets/images/friendfinder-data.png)
 
 
 Determine the user's most compatible friend using the following as a guide:
