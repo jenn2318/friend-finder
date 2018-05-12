@@ -22,6 +22,7 @@ module.exports = function(app) {
         newArray.push(Number(req.body.question10));
         console.log(newArray);
         //Find the minimum difference between the user and the friends
+        //logic for current user before comparison can be done
          let lowestFriend = {};
          let total = 0;
          for (let i = 0; i < newArray.length; i++) {
