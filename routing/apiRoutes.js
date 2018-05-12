@@ -22,10 +22,10 @@ module.exports = function(app) {
         newArray.push(Number(req.body.question10));
         console.log(newArray);
         //Find the minimum difference between the user and the friends
-        //logic for current user before comparison can be done
-         let lowestFriend = {};
-         let total = 0;
-         for (let i = 0; i < newArray.length; i++) {
+        //Logic for current user: loop through their numbers before comparison can be done
+        let lowestFriend = {};
+        let total = 0;
+        for (let i = 0; i < newArray.length; i++) {
             total = total + newArray[i];
         }
         //loop through bestFriendArray
@@ -60,18 +60,19 @@ module.exports = function(app) {
 //jQuery to grab and show the modal of the best friend match still working on this part
 
 //$(document).ready(function() {
-  //  $("submit").on("click", function (event) {
-    //    event.preventDefault();
-      //  let nameModal = $("#modal-match");
-        //let photoModal = $("#modal-photo");
-        //let apiPath = "api/friends";
-        //$.post(currentURL + apiPath, yourBestFriend, function (data) {
-          //  $surveyForm.reset();
-           // $nameModal.html(data.name);
-           // $photoModal.attr("src", data.photo);
-           // $modal.modal("show");
+//  $("submit").on("click", function (event) {
+//    event.preventDefault();
+//  let nameModal = $("#modal-match");
+//let photoModal = $("#modal-photo");
+//let apiPath = "api/friends";
+//$.post(currentURL + apiPath, yourBestFriend, function (data) {
+//  $surveyForm.reset();
+// $nameModal.text(data.name);
+// $photoModal.attr("src", data.photo);
+// $modal.modal("show");
 
-       // });
+// });
 
-   // });
+
+// });
 //}
