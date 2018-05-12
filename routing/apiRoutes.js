@@ -64,15 +64,13 @@ module.exports = function(app) {
       //  let modalName = modal - match
         //let modalPhoto = modal - photo
         //let apiPath = "api/friends";
-        //$.post(currentURL + apiPath, youBestFriend, function (data) {
+        //$.post(currentURL + apiPath, yourBestFriend, function (data) {
           //  $surveyForm.reset();
            // $nameModal.text(data.name);
            // $photoModal.attr("src", data.photo);
            // $modal.modal("show");
 
        // });
-
-       // console.log(newFriend);
 
    // });
 //}
