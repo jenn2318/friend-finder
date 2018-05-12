@@ -61,12 +61,12 @@ module.exports = function(app) {
 //$(document).ready(function() {
   //  $("submit").on("click", function (event) {
     //    event.preventDefault();
-      //  let modalName = modal - match
-        //let modalPhoto = modal - photo
+      //  let nameModal = $("#modal-match");
+        //let photoModal = $("#modal-photo");
         //let apiPath = "api/friends";
         //$.post(currentURL + apiPath, yourBestFriend, function (data) {
           //  $surveyForm.reset();
-           // $nameModal.text(data.name);
+           // $nameModal.html(data.name);
            // $photoModal.attr("src", data.photo);
            // $modal.modal("show");
 
