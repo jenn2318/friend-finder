@@ -1,7 +1,5 @@
 # Overview
-friend-finder is a compatibility-based application that will use Node and Express to serve up information with get requests and a post to send data back to the user This full-stack site will take in results from your users' surveys, then compare their answers with those from other users. The app will then display the name and picture of the user with the best overall match. 
-
-Express will handle routing in this application. Also, make sure to deploy your application to Heroku for other users to fill out!
+friend-finder is a compatibility-based application that will use Node and Express to serve up information with get requests and a post to send data back to the user This full-stack site will take in results from your users' surveys, then compare their answers with those from other users. The app will then display the name and picture of the user with the best overall match. Express will handle routing in this application. 
 
 # Before You Begin
 Use this as a model.
@@ -87,6 +85,9 @@ The closest match will be the user with the least amount of difference.
 Once you've found the current user's most compatible friend, display the result as a modal pop-up.
 The modal should display both the name and picture of the closest match. 
 
+Also, make sure to deploy your application to Heroku for other users to fill out!
 
+![heroku deployment](public/assets/images/ffheroku_deploy.png)
+![heroku build](public/assets/images/heroku-build.png)
 
 
